@@ -1,0 +1,125 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 스타일 */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 30px;
+    color: #333;
+}
+
+/* 할 일 추가 폼 */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+button {
+    width: 20%;
+    padding: 10px;
+    margin-left: 80%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 할 일 목록 스타일 */
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #007bff;
+    margin-top: 40px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 12px;
+    margin: 10px 0 0 465px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* 최대 너비 설정 */
+    width: 100%; /* 부모 요소에 맞춰서 너비 확장 */
+    box-sizing: border-box; /* padding 포함 크기 계산 */
+}
+
+/* 마지막 항목에 여백 추가 */
+.todo-item:last-child {
+    margin-bottom: 30px;
+}
+
+input[type="checkbox"] {
+    margin-right: 15px;
+}
+
+span {
+    font-size: 1.1em;
+    color: #555;
+    flex-grow: 1;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* 완료된 할 일 */
+.completed .todo-item {
+    background-color: #e0f7e1;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.completed .todo-actions {
+    display: none;
+}
